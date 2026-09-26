@@ -67,7 +67,7 @@ export const AdminDashboard = ({ onNavigate }) => {
     { title: 'Inpatient Admissions', value: kpis.current_admissions, icon: Activity, color: '#7c3aed', bg: '#ede9fe', path: 'beds' },
     { title: 'Available Beds', value: `${kpis.available_beds} / ${kpis.total_beds}`, icon: BedDouble, color: '#059669', bg: '#d1fae5', path: 'beds' },
     { title: 'Available ICU Beds', value: `${kpis.available_icu_beds} / ${kpis.total_icu_beds}`, icon: AlertOctagon, color: '#dc2626', bg: '#fee2e2', path: 'beds' },
-    { title: "Today's Revenue", value: `₹{kpis.total_revenue.toLocaleString()}`, icon: DollarSign, color: '#d97706', bg: '#fef3c7', path: 'billing' },
+    { title: "Today's Revenue", value: `₹${₹kpis.total_revenue.toLocaleString()}`, icon: DollarSign, color: '#d97706', bg: '#fef3c7', path: 'billing' },
     { title: 'Pending Lab Tests', value: kpis.pending_labs, icon: FlaskConical, color: '#0284c7', bg: '#e0f2fe', path: 'laboratory' },
     { title: 'Pharmacy Low Stock', value: kpis.low_stock_medicines, icon: Pill, color: '#e11d48', bg: '#ffe4e6', path: 'pharmacy' },
     { title: 'Blood Bank Units', value: `${kpis.total_blood_units} Units`, icon: Droplet, color: '#be123c', bg: '#ffe4e6', path: 'blood-bank' },
