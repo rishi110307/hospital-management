@@ -268,7 +268,7 @@ export const PharmacyManagement = () => {
                             </strong>
                             <span style={{ fontSize: '0.72rem', color: '#64748b' }}> (Min: {m.min_stock_level})</span>
                           </td>
-                          <td>${m.unit_price.toFixed(2)}</td>
+                          <td>₹{m.unit_price.toFixed(2)}</td>
                           <td>
                             <span className={`badge badge-${isLow ? 'rose' : 'emerald'}`}>
                               {m.status}
