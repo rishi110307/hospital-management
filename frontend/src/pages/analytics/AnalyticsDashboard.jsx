@@ -72,7 +72,7 @@ export const AnalyticsDashboard = () => {
       + `Total Beds,${kpis.total_beds}\n`
       + `Available Beds,${kpis.available_beds}\n`
       + `ICU Beds Available,${kpis.available_icu_beds}\n`
-      + `Total Revenue,${kpis.total_revenue}\n`
+      + `Total Revenue,₹{kpis.total_revenue}\n`
       + `Blood Bank Units,${kpis.total_blood_units}\n`;
     
     const encodedUri = encodeURI(csvContent);
