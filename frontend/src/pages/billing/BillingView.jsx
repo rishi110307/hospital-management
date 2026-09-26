@@ -299,13 +299,13 @@ export const BillingView = () => {
                           </td>
                           <td style={{ fontSize: '0.8rem' }}>{inv.created_at?.split('T')[0] || 'Recent'}</td>
                           <td>
-                            <strong>${inv.net_amount.toFixed(2)}</strong>
+                            <strong>₹{inv.net_amount.toFixed(2)}</strong>
                           </td>
                           <td style={{ color: '#059669', fontWeight: 600 }}>
-                            ${inv.paid_amount.toFixed(2)}
+                            ₹{inv.paid_amount.toFixed(2)}
                           </td>
                           <td style={{ color: balance > 0 ? '#dc2626' : '#64748b', fontWeight: 700 }}>
-                            ${balance.toFixed(2)}
+                            ₹{balance.toFixed(2)}
                           </td>
                           <td>
                             <span className={`badge ${badge}`}>
