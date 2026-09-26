@@ -388,10 +388,10 @@ export const BillingView = () => {
                       </td>
                       <td style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem' }}>{c.policy_number}</td>
                       <td>
-                        <strong>${c.claim_amount.toFixed(2)}</strong>
+                        <strong>₹{c.claim_amount.toFixed(2)}</strong>
                       </td>
                       <td style={{ color: '#059669', fontWeight: 600 }}>
-                        ${c.approved_amount?.toFixed(2) || '0.00'}
+                        ₹{c.approved_amount?.toFixed(2) || '0.00'}
                       </td>
                       <td>
                         <span className={`badge ${badge}`}>
