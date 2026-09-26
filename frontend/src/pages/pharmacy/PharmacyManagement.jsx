@@ -475,7 +475,7 @@ export const PharmacyManagement = () => {
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 800, color: '#0f172a', marginBottom: '0.75rem' }}>
                 <span>Total Amount:</span>
                 <span style={{ color: '#059669' }}>
-                  ${cartItems.reduce((acc, i) => acc + (i.unit_price * i.quantity), 0).toFixed(2)}
+                  ₹{cartItems.reduce((acc, i) => acc + (i.unit_price * i.quantity), 0).toFixed(2)}
                 </span>
               </div>
               <button
