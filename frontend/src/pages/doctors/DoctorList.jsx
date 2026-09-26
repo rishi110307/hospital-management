@@ -161,7 +161,7 @@ export const DoctorList = () => {
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                     <DollarSign size={14} color="#059669" />
-                    <span style={{ fontWeight: 700, color: '#059669' }}>Fee: ${d.consultation_fee?.toFixed(2)}</span>
+                    <span style={{ fontWeight: 700, color: '#059669' }}>Fee: ₹{d.consultation_fee?.toFixed(2)}</span>
                   </div>
                 </div>
               </div>
