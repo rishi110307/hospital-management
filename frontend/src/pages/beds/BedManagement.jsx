@@ -309,7 +309,7 @@ export const BedManagement = () => {
                           </div>
                         ) : (
                           <div style={{ marginTop: '0.4rem', fontSize: '0.75rem', color: '#64748b' }}>
-                            Daily Rate: <strong>${b.daily_rate?.toFixed(2)}</strong>
+                            Daily Rate: <strong>₹{b.daily_rate?.toFixed(2)}</strong>
                             <div style={{ fontSize: '0.7rem', color: '#059669', marginTop: '0.2rem' }}>
                               Ready for Patient Admission
                             </div>
