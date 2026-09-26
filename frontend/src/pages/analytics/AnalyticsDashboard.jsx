@@ -160,7 +160,7 @@ export const AnalyticsDashboard = () => {
             </div>
           </div>
           <div style={{ fontSize: '1.6rem', fontWeight: 800, color: '#0f172a' }}>
-            ${kpis.total_revenue.toLocaleString()}
+            ₹{kpis.total_revenue.toLocaleString()}
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', color: '#059669', marginTop: '0.4rem' }}>
             <TrendingUp size={13} />
