@@ -254,7 +254,7 @@ export const BillingView = () => {
               </select>
             </div>
             <span style={{ fontSize: '0.8rem', color: '#64748b' }}>
-              Total Billed Ledger: <strong>${invoices.reduce((a, b) => a + b.net_amount, 0).toLocaleString()}</strong>
+              Total Billed Ledger: <strong>₹{invoices.reduce((a, b) => a + b.net_amount, 0).toLocaleString()}</strong>
             </span>
           </div>
 
@@ -594,7 +594,7 @@ export const BillingView = () => {
               {/* Discounts and Tax */}
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem', borderTop: '1px solid #f1f5f9', paddingTop: '0.75rem' }}>
                 <div className="form-group" style={{ margin: 0 }}>
-                  <label className="form-label">Discount ($)</label>
+                  <label className="form-label">Discount (₹)</label>
                   <input
                     type="number"
                     min={0}
@@ -604,7 +604,7 @@ export const BillingView = () => {
                   />
                 </div>
                 <div className="form-group" style={{ margin: 0 }}>
-                  <label className="form-label">Tax ($)</label>
+                  <label className="form-label">Tax (₹)</label>
                   <input
                     type="number"
                     min={0}
@@ -614,7 +614,7 @@ export const BillingView = () => {
                   />
                 </div>
                 <div className="form-group" style={{ margin: 0 }}>
-                  <label className="form-label">Paid Upfront ($)</label>
+                  <label className="form-label">Paid Upfront (₹)</label>
                   <input
                     type="number"
                     min={0}
@@ -799,7 +799,7 @@ export const BillingView = () => {
               </div>
 
               <div className="form-group" style={{ margin: 0 }}>
-                <label className="form-label">Claim Amount ($) *</label>
+                <label className="form-label">Claim Amount (₹) *</label>
                 <input
                   type="number"
                   step="0.01"
